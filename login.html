@@ -1,0 +1,59 @@
+
+
+
+
+
+
+<!-- $result = mysqli_query($conn, $sql);
+if($result){
+$num=mysqli_num_rows($result);
+if($num>0){
+   echo "login succesfully";
+}else{   
+    echo "Invalid Credentials";
+}
+}
+}
+if($result){     
+     header('location:home.html');
+}
+ else {
+     echo "query failed....!"; 
+}
+
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body><div class="wraper">
+   
+    <div class="reset">
+        <button onclick="document.location='index.html'">X</button>
+</div> 
+ <h1>Login</h1>
+
+    <form action="home.html" method="POST">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+     <input type="submit" class="btn"  name="submit" value="Login">
+    </form>
+
+    <div class="recover">
+        <a href="#">Forget Password</a>
+    </div>
+      
+     <div class="member">
+        Not a member? <a href="Signup.html">Register Now</a>
+     </div>
+    
+</div>
+</body>
+</html>
